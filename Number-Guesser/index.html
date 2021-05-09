@@ -10,9 +10,12 @@
 <body>
     <div class="container">
         <h1>Number Guessing Game</h1>
-        <p>Guess a number between <spam class="min-num">1</spam> to <spam class="max-num">10</spam>.</p>
-        <input type="number" placeholder="Enter your number" id="guess-input">
-        <input type="submit" value="submit" id="guess-value">
+        <div id="game">
+            <p>Guess a number between <spam class="min-num"></spam> to <spam class="max-num"></spam>.</p>
+            <input type="number" placeholder="Enter your number" id="guess-input">
+            <input type="submit" value="submit" id="guess-btn">
+            <p class="message"></p>
+        </div>       
     </div>
 
     <script src="app.js"></script>
