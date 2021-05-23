@@ -78,7 +78,7 @@ class Store {
 
             // Add book to ui
             ui.addBookToList(book);
-        })
+        });
     }
 
     static addBook(book){
@@ -86,7 +86,7 @@ class Store {
 
         books.push(book);
 
-        localStorage.setItem('bools', JSON.stringify(books));
+        localStorage.setItem('books', JSON.stringify(books));
     }
 
     static removeBook(){
@@ -96,6 +96,9 @@ class Store {
 
 
 }
+
+// DOM Load Event
+document.addEventListener('DOMContentLoaded', Store.displayBook);
 
 // Event listners for add books.
 document.getElementById('book-form').addEventListener('submit', function(e){
